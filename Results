@@ -1,0 +1,47 @@
+received delta on myIOT, publishing on non-thing topic...
+published to nonThingTopic2{"timestamp":1491339212766,"temperature":"22.00","humidity":"27.00"}
+received delta on myIOT, publishing on non-thing topic...
+published to nonThingTopic2{"timestamp":1491339222925,"temperature":"22.00","humidity":"27.00"}
+received delta on myIOT, publishing on non-thing topic...
+published to nonThingTopic2{"timestamp":1491339233069,"temperature":"22.00","humidity":"27.00"}
+received delta on myIOT, publishing on non-thing topic...
+published to nonThingTopic2{"timestamp":1491339243230,"temperature":"22.00","humidity":"27.00"}
+
+
+
+Temperature: 22.00C, humidity: 27.00%
+1491339212766
+22.00
+27.00
+got 'accepted' status on: myIOT
+updated state to thing shadow
+message nonThingTopic2 {"timestamp":1491339212766,"temperature":"22.00","humidity":"27.00"}
+received on 'nonThingTopic2': {"timestamp":1491339212766,"temperature":"22.00","humidity":"27.00"}
+Temperature: 22.00C, humidity: 27.00%
+1491339222925
+22.00
+27.00
+got 'accepted' status on: myIOT
+updated state to thing shadow
+message nonThingTopic2 {"timestamp":1491339222925,"temperature":"22.00","humidity":"27.00"}
+received on 'nonThingTopic2': {"timestamp":1491339222925,"temperature":"22.00","humidity":"27.00"}
+Temperature: 22.00C, humidity: 27.00%
+1491339233069
+22.00
+27.00
+got 'accepted' status on: myIOT
+updated state to thing shadow
+message nonThingTopic2 {"timestamp":1491339233069,"temperature":"22.00","humidity":"27.00"}
+received on 'nonThingTopic2': {"timestamp":1491339233069,"temperature":"22.00","humidity":"27.00"}
+Temperature: 22.00C, humidity: 27.00%
+1491339243230
+22.00
+27.00
+got 'accepted' status on: myIOT
+updated state to thing shadow
+message nonThingTopic2 {"timestamp":1491339243230,"temperature":"22.00","humidity":"27.00"}
+received on 'nonThingTopic2': {"timestamp":1491339243230,"temperature":"22.00","humidity":"27.00"}
+Temperature: 22.00C, humidity: 27.00%
+1491339253377
+22.00
+

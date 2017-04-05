@@ -1,0 +1,10 @@
+{
+	"host": "ama3zcwaoc2s6.iot.us-east-1.amazonaws.com",
+	"port": 8883,
+	"clientId": "myIOT",
+	"thingName": "myIOT",
+	"caCert": "root-CA.crt",
+	"clientCert": "0f3145e2f8-certificate.pem.crt",
+	"privateKey": "0f3145e2f8-private.pem.key"
+  
+}
