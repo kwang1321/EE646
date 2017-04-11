@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title> Query Weatherstation </title>
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <!--[if lt IE 9]>
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+    <h1>Input Dates and Time</h1>
+    <p>Input Starting and Ending Date and Time
+        <br/> January 1, 2017 hh:mm:ss
+        <br />
+    </p>
+</body>
+<form id="dates" action="process_get" method="post">
+    <div class="input-times" id="main">
+        <label for="Start">Start date and time:</label>
+        <input type="text" id="start" name="start_time" required="reqired" />
+        <br />
+        <label for="End">End date and time:</label>
+        <input type="text" id="end" name="end_time" require="required" />
+        <br />
+        <input type="submit" value="Submit" />
+    </div>
+    <!--.inpt-times -->
+</form> 
+<script src="js/utilities.js"></script>
+<script src="js/submit-event.js"></script>
+</html>
