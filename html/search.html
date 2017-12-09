@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+    <script type="text/javascript">
+    $(function() {
+        // alert("ok");
+        $("#btngetdata").click(function() {
+            $.get("/getdata", function(result) {
+                var el = document.getElementById('start_time');
+                el.textContent = result[0];
+                var em = document.getElementById('end_time');
+                em.textContent = result[1];
+                var en = document.getElementById('record_found');
+                en.textContent = result[2];
+                var eo = document.getElementById('avg_temperature');
+                eo.textContent = result[3];
+                var ep = document.getElementById('avg_humidity');
+                ep.textContent = result[4];
+            });
+        });
+
+        $("#btnSubmit").click(function() {
+            var el = $("#starttime").text()
+            var em = $("#endtime").text()
+                // var em = document.getElementById('end_time');
+            window.location.href = 'search_res.html?el=' + el + "&em=" + em;
+        });
+
+        $("#btnSubmit2").click(function() {
+            $("#thisform").submit();
+        });
+    });
+    </script>
+</head>
+
+<body>
+    <form id="thisform">
+        <!--[if lt IE 9]>
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+        <h1>Weather Report</h1>
+        <div id="start_time">Starting time</div>
+        <div id="starttime">2017/03/03</div>
+        <div id="end_time">End time</div>
+        <div id="endtime">2017/03/06</div>
+        <div id="record_found">Records found</div>
+        <div id="avg_temperature">Average temperature</div>
+        <div id="avg_humidity">Average humidity</div>
+        <input type="button" name="btngetdata" id="btngetdata" value="Get Data From Server" />
+        <input type="button" name="btnSubmit" id="btnSubmit" value="Redirect to Result Page" />
+        <input type="button" name="btnSubmit2" id="btnSubmit2" value="Redirect to Result Page2" />
+    </form>
+</body>
+
+</html>

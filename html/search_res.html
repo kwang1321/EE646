@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-url-parser/2.3.1/purl.js"></script>
+    <script type="text/javascript">
+    $(function() {
+        // alert("ok");
+        var url = $.url(); // parse the current page URL
+        console.log(url.param("el"));
+        console.log(url.param("em"));
+        var el = url.param("el");
+        var em = url.param("em");
+        $.post("/getdata", {
+            "el": el,
+            "em": em
+        }, function(result) {
+            $("#divContent").html(result);
+        });
+    });
+    </script>
+</head>
+
+<body>
+    <div id="divContent"></div>
+</body>
+
+</html>
