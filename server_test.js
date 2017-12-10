@@ -22,7 +22,7 @@ app.use(bodyParser.urlencoded({
 }));
 
 app.get('/query', function(req, res) {
-    res.sendfile("html/query.html");
+    res.sendFile("html/query.html",{"root":__dirname});
 });
 
 app.post('/process_get', function(req, res) {
